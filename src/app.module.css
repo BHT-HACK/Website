@@ -1,0 +1,12 @@
+.app__body {
+  position: relative;
+  min-height: 120vh;
+  background: linear-gradient(
+      0deg,
+      rgba(26, 99, 121, 0.445),
+      rgba(20, 14, 16, 0.322)
+    ),
+    url(./asset/help.svg);
+  background-size: cover;
+  background-position: center;
+}

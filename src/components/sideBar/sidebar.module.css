@@ -1,0 +1,52 @@
+.brand {
+  display: flex;
+  font-size: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  /* padding: 10px; */
+  margin: 10px auto;
+}
+@media (max-width: 1020px) and (min-width: 768px) {
+  .brand {
+    font-size: 1.5rem;
+  }
+}
+
+.logoPic {
+  font-size: 2.5rem !important;
+}
+.logoName {
+  padding: 10px;
+}
+
+@media (max-width: 901px) and (min-width: 768px) {
+  .logoName {
+    display: none;
+  }
+}
+.my_active::after {
+  display: block;
+  content: "";
+  margin-top: 5px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  animation: spread 0.5s;
+}
+
+@keyframes spread {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.items > li > a {
+  padding: 10px 15px;
+}
+@media (max-width: 810px) {
+  .items > li > a {
+    padding: 10px 12px;
+  }
+}
