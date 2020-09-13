@@ -1,12 +1,11 @@
-.items{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    cursor: pointer;
+.items {
+  display: flex;
+  align-items: center;
+  /* padding: 0 2px; */
+  cursor: pointer;
 }
-.items:hover{
-   background-color: lightgray;
-}
-.items > h4{
-    margin-left: 15px;
+
+.items > h4 {
+  margin-left: 5px;
+  font-size: 1.4rem;
 }

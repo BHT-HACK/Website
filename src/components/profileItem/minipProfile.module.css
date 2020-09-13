@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: 50% auto;
     padding: 20px;
-    width: 50%;
+    width: 100%;
     border: 1px solid black;
 }
 p{

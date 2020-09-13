@@ -1,27 +1,46 @@
-.reqLog{
-    width: 95%;
-    display: grid;
-    grid-template-columns: 20% auto;
-    grid-column-gap: 20px;
-    background-color: rgb(51,51,51);
-    margin: 30px;
-    min-height: 110px;
-    border-radius: 20px; 
+.reqLog {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-column-gap: 20px;
+  background-color: rgb(51, 51, 51);
+  margin: 18px;
+  min-height: 110px;
+  border-radius: 20px;
 }
 
-.reqLogDate{
-    
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: white;
+.reqLogDate {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.reqLogDate>h6{
+    text-transform: uppercase;
 }
 
-.reqLogEventName{
-    display: flex;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    background-color: lightgray;
+.reqLogEventName {
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  border-radius: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-transform: capitalize;
+}
+.reqLogEventName > h2 {
+  font-size: 3.5rem;
+}
+
+@media (max-width: 700px) {
+  .reqLogEventName > h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 700px) {
 }
