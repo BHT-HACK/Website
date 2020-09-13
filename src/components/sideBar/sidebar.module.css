@@ -19,7 +19,7 @@
   padding: 10px;
 }
 
-@media (max-width: 901px) and (min-width: 768px) {
+@media (max-width: 940px) and (min-width: 768px) {
   .logoName {
     display: none;
   }
@@ -45,8 +45,8 @@
 .items > li > a {
   padding: 10px 15px;
 }
-@media (max-width: 810px) {
+@media (max-width: 840px) {
   .items > li > a {
-    padding: 10px 12px;
+    padding: 10px;
   }
 }
