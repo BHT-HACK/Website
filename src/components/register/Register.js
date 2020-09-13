@@ -3,7 +3,13 @@ import styles from './register.module.css';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
 import {Button, FormControl, Input, InputLabel, FormHelperText} from '@material-ui/core';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import axios from 'axios';
+
+const registerUser = (userData) => dispatch => {
+    axios
+      .post("/routes/users/register", userData)
+};
 
 const Register = () => {
 
@@ -81,6 +87,16 @@ const Register = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
+
+        const newUser = {
+            fname: firstName,
+            lname: secondName,
+            email: email,
+            password: password
+        };
+
+        registerUser(newUser);
+
         const isValid = validate();
         if (isValid) {
             setFirstName("");
