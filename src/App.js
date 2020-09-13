@@ -9,7 +9,8 @@ import Requests from './components/requests/Requests';
 import RequestRecord from './components/requestRecord/RequestRecord';
 import Map from './components/map/Map';
 
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom'
+
 function App() {
     return (
         <Router>

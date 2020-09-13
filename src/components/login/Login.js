@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-dom'
 import styles from './login.module.css';
 import {FormControl, Input, Button, InputLabel, FormHelperText} from '@material-ui/core';
 
@@ -26,11 +27,11 @@ const Login = () => {
                 <Input value={email} id="my-input" onChange={handleEmail} aria-describedby="my-helper-text"/>
                 <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
             </FormControl>
-
+            <br></br>
             <FormControl className={styles.email}>
                 <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
                 <Input value={password} id="standard-adornment-password" onChange={handlePassword}  type= 'password' aria-describedby="my-helper-text"/>
-                <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
+                <FormHelperText id="my-helper-text">We'll never share your password.</FormHelperText>
             </FormControl>
             <Button className={styles.fromBtn} onClick={handleSubmit}>
                 Login
