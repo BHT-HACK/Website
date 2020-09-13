@@ -13,24 +13,14 @@ import {
 '@material-ui/core';
 
 const Requests = () => {
-<<<<<<< HEAD
-    const [categories, setCategories] = useState("Grocery");
-    const [listCategory, setListCategory] = useState(
-        ["Grocery", "Medicine", "Home Supplies", "Volunteering work", "First Aid"]
-=======
     const [categories, setCategories] = useState("🌮");
     const [listCategory, setListCategory] = useState(
         ["Fruits/Vegetables", "Packed Food", "Drinks", "Water"]
->>>>>>> 67f4071dc44991ac18db46f5f77ea332165c545b
     );
     const [textValue, setTextValue] = useState("Grocery");
     const [event, setEvent] = useState("")
     const [host, setHost] = useState("")
     const [desc, setDesc] = useState("")
-<<<<<<< HEAD
-    const [max, setMax] = useState("")
-=======
->>>>>>> 67f4071dc44991ac18db46f5f77ea332165c545b
     const [date, setDate] = useState("")
     const [location, setLocation] = useState("")
     const handleSubmit = (e) => {
@@ -53,13 +43,6 @@ const Requests = () => {
         
     }
 
-<<<<<<< HEAD
-    const handleMax = e => {
-        setMax(e.target.value);
-       
-    }
-=======
->>>>>>> 67f4071dc44991ac18db46f5f77ea332165c545b
 
     const handleDate = e => {
         setDate(e.target.value);
@@ -106,10 +89,7 @@ const Requests = () => {
                 </FormControl>
                 <FormControl className={styles.form1}>
                     <Select variant="outlined" value={categories} onChange={changeHandler}>
-<<<<<<< HEAD
-=======
                     <MenuItem value={"🌮"}>{"🌮"}</MenuItem>
->>>>>>> 67f4071dc44991ac18db46f5f77ea332165c545b
                         {
                             listCategory.map(
                                 category => (<MenuItem value={category}>{category}</MenuItem>)
@@ -126,18 +106,6 @@ const Requests = () => {
                     value={desc}
                     />
 
-<<<<<<< HEAD
-                <FormControl className={styles.form1}>
-                    <InputLabel htmlFor="my-input">Max Number of volunteer</InputLabel>
-                    <Input
-                        onChange={handleMax}
-                        value={max}
-                        type="text"
-                        id="my-input"
-                        aria-describedby="my-helper-text"/>
-                </FormControl>
-=======
->>>>>>> 67f4071dc44991ac18db46f5f77ea332165c545b
 
                 <form noValidate="noValidate">
                     <TextField
